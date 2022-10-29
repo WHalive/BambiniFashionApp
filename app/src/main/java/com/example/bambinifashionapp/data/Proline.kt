@@ -1,9 +1,6 @@
 package com.example.bambinifashionapp.data
 
-import androidx.annotation.Nullable
-import androidx.lifecycle.LiveData
 import com.google.gson.annotations.SerializedName
-import kotlinx.coroutines.flow.MutableStateFlow
 
 data class Proline(@SerializedName("user") var user: UserProline)
 

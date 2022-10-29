@@ -5,7 +5,6 @@ import com.example.bambinifashionapp.BuildConfig
 import com.example.bambinifashionapp.data.ContentType
 import com.example.bambinifashionapp.data.Landing
 import com.example.bambinifashionapp.data.Proline
-import com.example.bambinifashionapp.database.PromotionEntity
 import com.example.bambinifashionapp.internet.interceptor.ApiKeyInterceptor
 import com.example.bambinifashionapp.internet.interceptor.LocalizationInterceptor
 import com.google.gson.GsonBuilder
@@ -18,7 +17,7 @@ import java.util.concurrent.TimeUnit
 
 private const val BASE_URL = "https://babydriver-android.bambinimirror.com/m/"
 
-val valueTypeAdapter = RuntimeTypeAdapterFactory.of(ContentType::class.java, "name")
+val valueTypeAdapter = com.example.bambinifashionapp.internet.RuntimeTypeAdapterFactory.of(ContentType::class.java, "name")
     .registerSubtype(ContentType.QuadroType::class.java, "quadro")
     .registerSubtype(ContentType.BannerType::class.java, "banner")
     .registerSubtype(ContentType.FeaturedCategoriesType::class.java, "featured-categories")

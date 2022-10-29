@@ -22,10 +22,10 @@ class SearchFragment : Fragment() {
 
 /*
 LANDING
-curl -XGET -H 'bf-api-key: oMXmKN4YSgD8RgeFfMOF54FdyENIxp' -H 'bf-localization: AT,USD,en' 'https://babydriver-android.bambinimirror.com/m/v1/page:type=landing'
+curl -XGET -H 'bf-api-key: nAdCsZsfxD2wRZFL' -H 'bf-localization: AT,USD,en' 'https://babydriver-android.bambinimirror.com/m/v1/page:type=landing'
 
 PROMO
-curl -XGET -H 'bf-api-key: oMXmKN4YSgD8RgeFfMOF54FdyENIxp' -H 'bf-localization: AT,USD,en' 'https://babydriver-android.bambinimirror.com/m/v1/user:proline'
+curl -XGET -H 'bf-api-key: nAdCsZsfxD2wRZFL' -H 'bf-localization: AT,USD,en' 'https://babydriver-android.bambinimirror.com/m/v1/user:proline'
 
  */
 

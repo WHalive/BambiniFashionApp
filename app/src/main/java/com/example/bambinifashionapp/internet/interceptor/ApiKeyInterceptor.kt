@@ -8,7 +8,7 @@ class ApiKeyInterceptor : Interceptor {
         val originalRequest = chain.request()
 
         val newRequest = originalRequest.newBuilder()
-            .addHeader("bf-api-key", "oMXmKN4YSgD8RgeFfMOF54FdyENIxp")
+            .addHeader("bf-api-key", "nAdCsZsfxD2wRZFL")
             .build()
 
         return chain.proceed(newRequest)

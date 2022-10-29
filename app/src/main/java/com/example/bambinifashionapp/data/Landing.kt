@@ -64,5 +64,4 @@ interface ContentType {
             @SerializedName("image") val image: Image = Image(""),
         )
     }
-
 }

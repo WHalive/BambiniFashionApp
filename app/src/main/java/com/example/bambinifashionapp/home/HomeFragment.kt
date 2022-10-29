@@ -1,15 +1,12 @@
 package com.example.bambinifashionapp.home
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.bambinifashionapp.data.ContentType
-import com.example.bambinifashionapp.database.BambiniViewModel
 import com.example.bambinifashionapp.databinding.FragmentHomeBinding
 import com.example.bambinifashionapp.homeRecyclerview.HomeRecyclerViewAdapter
 
@@ -17,7 +14,8 @@ class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
     private val viewModel: HomeViewModel by viewModels()
-//    private val viewModel: BambiniViewModel by viewModels()
+
+    //    private val viewModel: BambiniViewModel by viewModels()
     private val promotionAdapter by lazy { HomeViewPagerAdapter() }
     private val homeRecyclerViewAdapter by lazy { HomeRecyclerViewAdapter() }
 
@@ -36,7 +34,7 @@ class HomeFragment : Fragment() {
             promotionAdapter.setProlineItems(promotions)
         }
         viewModel.landing.observe(viewLifecycleOwner) { landing ->
-          homeRecyclerViewAdapter.items = landing.content
+            homeRecyclerViewAdapter.items = landing.content
 //            Log.d ("homeRecyclerViewAdapter", "items${homeRecyclerViewAdapter.items}")
 //            Log.d("landing.content","${landing.content}")
         }

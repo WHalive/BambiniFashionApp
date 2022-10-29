@@ -32,7 +32,7 @@ class HomeViewModel : ViewModel() {
         viewModelScope.launch {
             try {
                 _promotions.value =
-                    FashionApi.retrofitService.getPromotion().user.proLine.center.items
+                    FashionApi.retrofitService. getPromotion().user.proLine.center.items
 //                Log.d("HomeViewModel", "getAllItems: ${promotions.value}")
                 _landing.value = FashionApi.retrofitService.getHomeScreen().page
 //                Log.d("HomeViewModel", "getAllItems: ${landing.value}")
