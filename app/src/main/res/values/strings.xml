@@ -13,7 +13,7 @@
     <string name="home_is_empty">Home is empty</string>
     <string name="menu_is_empty">Menu is empty</string>
     <string name="search_is_empty">Search is empty</string>
-    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_splash">Bambini</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
